@@ -1,0 +1,26 @@
+@import "bootstrap";
+@import "syntax.css";
+
+// Basic Classes
+.section {
+	.make-row();
+}
+
+// Header
+header.banner {
+	.site-title {
+		.make-sm-column(2);
+		@site-title-size: 100px;
+		a {
+			width:@site-title-size;
+			height:@site-title-size;
+			display:block;
+			background: @brand-primary;
+			color: #ffffff;
+			text-align:center;
+		}
+		h1 {
+			line-height:@site-title-size;
+		}
+	}
+}
