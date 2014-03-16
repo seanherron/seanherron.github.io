@@ -1559,6 +1559,13 @@ pre code {
   margin-left: -15px;
   margin-right: -15px;
 }
+header.banner {
+  width: 100%;
+  height: 200px;
+  background: url('/static/img/shuttle.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 header.banner .site-title {
   position: relative;
   min-height: 1px;
@@ -1572,13 +1579,19 @@ header.banner .site-title {
   }
 }
 header.banner .site-title a {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   display: block;
   background: #428bca;
   color: #ffffff;
   text-align: center;
 }
 header.banner .site-title h1 {
-  line-height: 100px;
+  line-height: 50px;
+  font-size: 25px;
+}
+@media (min-width: 768px) {
+  header.banner {
+    height: 400px;
+  }
 }
