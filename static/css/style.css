@@ -1396,17 +1396,14 @@ pre code {
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
-.row:after,
-.section:before,
-.section:after {
+.row:after {
   content: " ";
   display: table;
 }
 .clearfix:after,
 .container:after,
 .container-fluid:after,
-.row:after,
-.section:after {
+.row:after {
   clear: both;
 }
 .center-block {
@@ -1555,43 +1552,12 @@ pre code {
     display: none !important;
   }
 }
-.section {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-header.banner {
+header {
   width: 100%;
-  height: 200px;
-  background: url('/static/img/shuttle.jpg');
-  background-size: cover;
-  background-position: center center;
+  background: #ffb03b;
+  color: #333333;
+  text-transform: uppercase;
 }
-header.banner .site-title {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  header.banner .site-title {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-header.banner .site-title a {
-  width: 50px;
-  height: 50px;
-  display: block;
-  background: #428bca;
-  color: #ffffff;
-  text-align: center;
-}
-header.banner .site-title h1 {
-  line-height: 50px;
-  font-size: 25px;
-}
-@media (min-width: 768px) {
-  header.banner {
-    height: 400px;
-  }
+header a {
+  color: #333333;
 }

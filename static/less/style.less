@@ -1,35 +1,16 @@
 @import "bootstrap";
 @import "syntax.css";
 
-// Basic Classes
-.section {
-	.make-row();
-}
+
+// General Classes
 
 // Header
-header.banner {
+header {
   width:100%;
-  height:200px;
-  background:url('/static/img/shuttle.jpg');
-  background-size:cover;
-  background-position: center center;
-	.site-title {
-		.make-sm-column(2);
-		@site-title-size: 50px;
-		a {
-			width:@site-title-size;
-			height:@site-title-size;
-			display:block;
-			background: @brand-primary;
-			color: #ffffff;
-			text-align:center;
-		}
-		h1 {
-			line-height:@site-title-size;
-      font-size:@site-title-size/2;
-		}
-	}
-  @media (min-width: @screen-sm-min) {
-    height:400px;
+  background: rgb(255, 176, 59);
+  color: @text-color;
+  text-transform: uppercase;
+  a {
+    color: @text-color;
   }
 }
