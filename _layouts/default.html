@@ -6,20 +6,31 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/static/css/style.css">
-
+<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300' rel='stylesheet' type='text/css'>  
 </head>
 <body>
-  <header role="banner" class="banner">
-    <div class="container">
+<div class="container">
+  <div class="main">
+    <header role="banner" class="banner">
       <div class="site-header">
         <div class="site-title">
           <h1><a href="/">SH</a></h1>
+          <span class="subtitle">Sean Herron</span>
         </div>
+        <nav role="navigation" class="site-nav">
+          <ul>
+            {% for link in site.data.nav %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
       </div>
+    </header>
+  
+    <div class="content">
+      {{ content }}
     </div>
-  </header>
-  
-  
-  {{ content }}
+  </div>
+</div>
 </body>
 </html>
