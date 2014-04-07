@@ -25,7 +25,7 @@ Every single person associated with the PIF program is absolutely fantastic. I'v
 
 - [Mollie Ruskin](https://twitter.com/mollieruskin), a Fellow currently at the VA who can take the most unimaginative person you can think of and have them posting up user needs in color-coded post-it notes within the hour.
 
-- [James Sanders](https://twitter.com/jamestsanders), a Fellow who apparently didn't think building out how to get broadband to millions of students across the country at the Department of Education wasn't enough work and so decided to plan the first-ever [White House Film Festival](http://www.whitehouse.gov/FilmFestival).
+- [James Sanders](https://twitter.com/jamestsanders), a Fellow who apparently didn't think building out how to get broadband to millions of students across the country at the Department of Education was enough work and so decided to plan the first-ever [White House Film Festival](http://www.whitehouse.gov/FilmFestival).
 
 ### 3. Gain a new appreciation for government
 It's really difficult to understand some of the major technology problems in government until you get here. The federal government is a massive machine, and while it could use some tuning up, every single person I've met here has been dedicated, passionate, and knowledgeable about their work. Being here has given me a whole new appreciation for the importance of our democracy, and contributing just a little bit back is incredibly rewarding.
