@@ -2,4 +2,4 @@ name: Sean Herron
 markdown: redcarpet
 pygments: true
 
-permalink: /:title.html
+permalink: /:title
