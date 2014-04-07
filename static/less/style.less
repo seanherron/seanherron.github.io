@@ -1,7 +1,7 @@
 @import "bootstrap";
-@import "syntax.css";
-@import "/static/fonts/clear-sans/web fonts/clearsans_light_macroman/stylesheet.css";
-
+@import "/static/css/syntax.css";
+@import "/static/fonts/font-awesome/css/font-awesome.min.css";
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300italic,300);
 
 // General Classes
 html,body,.container {
@@ -16,16 +16,27 @@ p {
   padding-bottom:40px;
 }
 
+.image {
+  img {
+    .img-responsive();
+  }
+  .image-caption {
+    text-align:center;
+    font-style:italic;
+    font-size:@font-size-small;
+  }
+  margin-bottom:40px;
+}
+
 // Header
 header.banner {
-  .make-md-column(4);
+  .make-sm-column(4);
   
   .site-header {
     position:relative;
-    top:25%;
     margin-top:25px;
   }
-  @site-header-size:125px;
+  @site-header-size:100px;
   h1 {
     height:@site-header-size;
     width:@site-header-size;
@@ -50,30 +61,93 @@ header.banner {
   .subtitle {
     width:100%;
     display:block;
-    font-size:18px;
+    font-size:16px;
     font-weight:300;
     text-align:center;
-    text-transform:uppercase;
-    margin-top:2px;
+		color: @gray-light;
+		text-transform:lowercase;
   }
   
   .site-nav {
-    ul {
-      .list-unstyled();
-    }
+		ul {
+				.list-inline();
+				text-align:center;
+				margin-top:15px;
+				margin-bottom:35px;
+		}
+		i {
+			padding-right: 5px;
+			display:inline-block;
+			width:15px;
+		}
+		a {
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	  @media (min-width: @screen-sm-min) {
+			width: @site-header-size;
+			margin:0 auto;
+			margin-top:50%;
+	    ul {
+	      .list-unstyled();
+				text-align:left;
+	    }
+	  }
   }
-  @media (min-width: @screen-md-min) {
+  @media (min-width: @screen-sm-min) {
     height:100%;
   }
 }
 
+// Body Content
 .content {
-  .make-md-column(8);
+  .make-sm-column(8);
   font-size: @font-size-large;
   font-family: 'Merriweather', serif;
   font-weight:300;
   line-height:2;
   @media (min-width: @screen-sm-min) {
-    margin-top:15%;
+    margin-top:10%;
   }
+}
+
+p.welcome {
+	color: @gray-light;
+	font-style:italic;
+	font-size: @font-size-small;
+	padding-bottom:0;
+	@media (min-width: @screen-sm-min) {
+		font-size: @font-size-base;
+		padding-bottom:0;
+	}
+	
+}
+
+ul.post-list {
+	.list-unstyled();
+	li {
+		margin-bottom:20px;
+		line-height:20px;
+	}
+	.meta {
+		font-size:@font-size-small;
+		font-style:italic;
+		color: @gray-light;
+	}
+}
+
+// Individual Posts
+.post {
+	header {
+		margin-bottom:15px;
+	}
+	h2 {
+		line-height:1.6;
+		margin-bottom:0;
+	}
+	time {
+		font-style:italic;
+		font-color:@gray-light;
+	}
 }

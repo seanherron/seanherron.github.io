@@ -20,7 +20,7 @@
         <nav role="navigation" class="site-nav">
           <ul>
             {% for link in site.data.nav %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li><a href="{{ link.url }}"><i class="fa {{ link.icon }}"></i> {{ link.title }}</a></li>
             {% endfor %}
           </ul>
         </nav>

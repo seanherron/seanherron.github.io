@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="section">
-    <div class="site-content">
-      <div class="page-section post-list">
-        {% for post in site.posts %}
-        <article class="article-list-item">
-          <time datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </article>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
+<p class="welcome">Some of my random thoughts...</p>
+<ul class="post-list">
+{% for post in site.posts %}
+	<li class="post">
+		<div class="meta">
+			<time datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time>
+		</div>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+</ul>
